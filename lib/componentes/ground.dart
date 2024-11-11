@@ -21,7 +21,7 @@ Load
     sprite = await Sprite.load('ground.png');
 
     //colision
-    add (RectangleHitbox());
+    add(RectangleHitbox());
 
   }
   /*

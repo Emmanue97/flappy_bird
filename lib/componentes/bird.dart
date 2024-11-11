@@ -30,7 +30,7 @@ Cargar
     //cargar bird
     sprite = await Sprite.load('bird.png');
     //añadir hitbox
-    add (RectangleComponent());
+    add(RectangleHitbox());
 
   }
 
