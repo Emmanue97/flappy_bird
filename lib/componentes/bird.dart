@@ -7,6 +7,8 @@ import 'package:flappy_bird/componentes/ground.dart';
 import 'package:flappy_bird/constants.dart';
 import 'package:flappy_bird/game.dart';
 
+import 'pipe.dart';
+
 class Bird extends SpriteComponent with CollisionCallbacks {
 /*
 Inicia pajaro
@@ -61,6 +63,10 @@ actualizacio cada segundo
     //check
     if (other is Ground){
        (parent as FlappyBirdGame).gameOver();
+    }
+    //verifica si choca con las tuverias
+    if (other is Pipe) {
+      (parent as FlappyBirdGame).gameOver();
     }
   }
 }

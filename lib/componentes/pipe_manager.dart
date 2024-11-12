@@ -15,7 +15,7 @@ class PipeManager extends Component with HasGameRef<FlappyBirdGame> {
   void update(double dt) {
 //generar tuverias en intervalos
   pipeSpawnTimer += dt;
-  const double pipeInterval = 2;
+  
 
   if(pipeSpawnTimer > pipeInterval){
     pipeSpawnTimer = 0;
@@ -28,9 +28,7 @@ class PipeManager extends Component with HasGameRef<FlappyBirdGame> {
   */
   void spawnPipe(){
     final double screenHeight = gameRef.size.y;
-    const double pipeGap = 150;
-    const double  minPipeHeight = 50;
-    const double pipeWidth = 60;
+    
 
     /*
     calcular altura de tuverias
